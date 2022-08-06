@@ -241,6 +241,28 @@ div.container_navbar {
     margin: auto;
 }
 
+div.col-md-4 img {
+    justify-content: center;
+    display: grid;
+    object-fit: cover !important;
+}
+
+div.workGrid {
+    display: grid;
+    justify-content: center;
+    border-color: transparent;
+}
+
+div.DoeRedo {
+    display: grid;
+    justify-content: center;
+}
+
+div.GivingTree {
+    display: grid;
+    justify-content: center;
+}
+
 .click {
     margin: 10%;
     padding: 8px;
