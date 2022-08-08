@@ -163,6 +163,7 @@ div.container_navbar {
 
 .flex-container div {
     border-color: transparent;
+    max-width: 1200px;
 }
 
 .flexbox-item-1 {
