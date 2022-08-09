@@ -89,7 +89,60 @@ div.container_navbar {
     
 }
 
+@media all and (max-width: 750px) {
 
+    .nav_links {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .flex-container {
+        display: flex;
+        position: absolute;
+        padding: 0;
+        margin-bottom: 5%;
+        margin-top: auto;
+        align-items: inherit;
+    }
+    .click {
+        margin-top: 5%;
+        padding: 8px;
+        margin-bottom: auto;
+        position: absolute;
+    }
+    
+}
+@media all and (max-width: 1200px) {
+
+    .nav_links {
+        flex-direction: row;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .flex-container {
+        display: flex;
+        position: relative;
+        padding: 0;
+        margin-bottom: 5%;
+        margin-top: auto;
+        align-items: inherit;
+    }
+    .click {
+        margin-top: 5%;
+        padding: 8px;
+        margin-bottom: auto;
+        position: absolute;
+    }
+    
+}
 .container_navbar {
     width: 100%;
     padding-top: 0%;
@@ -148,19 +201,12 @@ div.container_navbar {
 }
 
 div .flex-container {
-
-}
-.flex-container {
-  display: flex;
   height: 800;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   background-color: transparent;
-
-}
-
-.section.myWork {
 
 }
 
@@ -272,16 +318,21 @@ div.col-md-4 img {
     justify-content: center;
     display: grid;
     object-fit: cover !important;
-    max-width:none;
-    max-height: none;
+    width: 100%;
+    height: auto;
     flex:auto;
+    
 
 }
 
 div.workGrid {
+    margin: 0;
+    padding: 8px;
+    text-align: left;
     display: grid;
     justify-content: center;
     border-color: transparent;
+
 }
 
 div.DoeRedo {
@@ -295,11 +346,13 @@ div.GivingTree {
 }
 
 .click {
-    margin: 10%;
-    padding: 8px;
+    margin: auto;
+    padding: 5%;
+    position: absolute;
     border: none;
     background: #ffffff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:
+    Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
     color: #7B38B8;
