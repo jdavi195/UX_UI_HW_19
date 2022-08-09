@@ -1,4 +1,4 @@
-$("p").mouseenter(function(){
+$("p").hover(function(){
     $(this).hide();
 })
 
@@ -17,3 +17,22 @@ previews.forEach(preview => {
     })
 
 })
+
+modal.addEventListener("click", (e) => {
+    console.log(e);
+});
+
+function setNewImage()
+{
+    document.getElementById("images/budgetcover.png").src ="images/budgetcover.png";
+}
+function setOldImage()
+{
+        document.getElementById("images/budgetcover.png").src
+        ="images/budgetcover.png";
+        //alert();
+}
+
+<images id="" onmouseover="setNewImage()"
+onmouseout="setOldImage()" src="images/budgetcover.png"
+width="300"/>
