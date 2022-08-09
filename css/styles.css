@@ -311,6 +311,10 @@ div .flex-container {
     height: 100%;
 }
 
+.container {
+    overflow: hidden;
+}
+
 div.col-md-4 img {
     justify-content: center;
     display: grid;
