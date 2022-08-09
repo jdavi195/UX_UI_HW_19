@@ -8,7 +8,7 @@ body,html{
 }
 
 *{
-    box-sizing: border-box;
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
@@ -67,6 +67,29 @@ div.container_navbar {
     
 }
 
+@media all and (max-width: 600px) {
+
+    .nav_links {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .flex-container {
+        display: flex;
+        position: relative;
+        padding: 0;
+        margin-bottom: 5%;
+        margin-top: auto;
+        align-items: inherit;
+    }
+    
+}
+
+
 .container_navbar {
     width: 100%;
     padding-top: 0%;
@@ -124,9 +147,12 @@ div.container_navbar {
     text-align: center;
 }
 
+div .flex-container {
+
+}
 .flex-container {
   display: flex;
-  height: 800px;
+  height: 800;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -246,6 +272,10 @@ div.col-md-4 img {
     justify-content: center;
     display: grid;
     object-fit: cover !important;
+    max-width:none;
+    max-height: none;
+    flex:auto;
+
 }
 
 div.workGrid {
