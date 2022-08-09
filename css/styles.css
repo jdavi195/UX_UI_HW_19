@@ -135,12 +135,6 @@ div.container_navbar {
         margin-top: auto;
         align-items: inherit;
     }
-    .click {
-        margin-top: 5%;
-        padding: 8px;
-        margin-bottom: auto;
-        position: absolute;
-    }
     
 }
 .container_navbar {
@@ -321,41 +315,61 @@ div.col-md-4 img {
     width: 100%;
     height: auto;
     flex:auto;
-    
+}
 
+div.card-body {
+    margin: 0;
+    width: 100vh;
+    height: inherit;
+    padding: 2%;
 }
 
 div.workGrid {
-    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    text-align: left;
+    display: grid;
+    justify-content: center;
+    border-color: transparent; 
+}
+
+div.DoeRedo {
+    margin-bottom: 10px;
     padding: 8px;
     text-align: left;
     display: grid;
     justify-content: center;
     border-color: transparent;
-
-}
-
-div.DoeRedo {
-    display: grid;
-    justify-content: center;
 }
 
 div.GivingTree {
+    margin-top: 10px;
+    padding: 8px;
+    text-align: left;
     display: grid;
     justify-content: center;
+    border-color: transparent;
+    align-content: space-around;
+}
+
+/*--button function fot my works--*/
+
+button.click {
+    margin-left:70px;
+    margin-top: 50px;
 }
 
 .click {
-    margin: auto;
-    padding: 5%;
-    position: absolute;
+    margin: 20px;
+    padding: 8px;
+    position: relative;
     border: none;
-    background: #ffffff;
-    font-family:
-    Arial, Helvetica, sans-serif;
+    background: #7b38B8;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
-    color: #7B38B8;
+    color: #ffffff;
     transform: translate(-50%, -50%);
     border-radius: 4px;
 }
@@ -371,6 +385,10 @@ div.GivingTree {
     transform: scale(95%);
     transition: .3s;
     transform: translate(-50%, -50%);
+}
+
+.click:enabled {
+    border-bottom: none;
 }
 
 /*--View All Projects here--*/
@@ -431,8 +449,4 @@ div.social {
 .footer {
     background-color: #3C1A5B;
     background-position: center;
-}
-
-.click {
-    align-items: center;
 }
