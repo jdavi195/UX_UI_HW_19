@@ -358,7 +358,6 @@ div.workGrid {
     padding: 8px;
     text-align: left;
     display: grid;
-    justify-content: center;
     border-color: transparent;
     overflow: hidden;
 }
